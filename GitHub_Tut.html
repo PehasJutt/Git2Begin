@@ -1,0 +1,199 @@
+<html>
+<head>
+    <title>GitHubTuts - M033</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="root">
+        <h1 class="cntr">GitHub Guide For Beginners</h1>
+        <div id="container">
+            <div id="linkContainer">
+                <div class="tkn"><a href=#intro><h4>Introduction</h4></a></div>
+                <div class="tkn"><a href=#InstlGit><h4>Installing Git</h4></a></div>
+                <div class="tkn"><a href=#PreReq><h4>Pre-Requisites</h4></a></div>
+                <div class="tkn"><a href=#GitRep><h4>Make a Repo</h4></a></div>
+                <div class="tkn"><a href=#GitInit><h4>Initiallizing Git</h4></a></div>
+                <div class="tkn"><a href=#GitWrk><h4>Working with Git</h4></a></div>
+                <div class="tkn"><a href=#reads><h4>Suggested Reads</h4></a></div>
+            </div>
+            <div id="dataContainer">
+                <h2 class="PrmHead" id="intro">Introduction</h2>
+                <div class="PrmCntnt">
+                    <p>Version control is like a savings program for your project. By tracking and logging the changes you make to your file or file sets over time, a version-control system gives you the power to review or even restore earlier versions. Version control takes snapshots of every revision to your project. You can then access these versions to compare or restore them as needed.</p>
+                    <p>For example, let’s say that you’re working on a web development project, and through the course of your revisions, you suddenly notice all of your text has become misaligned. And because the first rule of coding is that it’s always your fault, you can bet that some change you made somewhere along the way is the cause. But not to worry; instead of having to crawl back through every line of code, you can just use your version control system to reload earlier versions, until you pinpoint the offending change and correct it.</p>
+                    <p> And with that in mind, let’s move on to Git and GitHub.</p>
+                </div>
+                <div class="subCntnt">
+                    <h3>What is Git?</h3>
+                    <div>
+                        <p>First developed back in 2005, Git is an extremely popular version control system that is at the heart of a wide variety of high-profile projects. Git is installed and maintained on your local system (rather than in the cloud) and gives you a self-contained record of your ongoing programming versions. It can be used completely exclusive of any cloud-hosting service — you don’t even need internet access, except to download it. </p>
+                        <p>Compared to other version control systems, Git is responsive, easy to use, and inexpensive (free, actually). Git is also specially designed to work well with text files — which, if you think about it, is what code actually is. But one thing that really sets Git apart is its branching model. Branching allows you to create independent local branches in your code. This means you can try out new ideas, set aside branches for production work, jump back to earlier branches, and easily delete, merge, and recall branches at the click of a button.</p>
+                    </div>
+                    <h3>What is GitHub?</h3>
+                    <div>
+                        <p>In the discussion of Git vs. GitHub, it’s been said that GitHub is to Git what Facebook is to your actual face. What’s that mean? Well, it means that while Facebook is kind of like an online face database (of sorts). GitHub is designed as a Git repository hosting service. </p>
+                        <p>And what exactly is a Git repository hosting service? It’s an online database that allows you to keep track of and share your Git version control projects outside of your local computer/server. Unlike Git, GitHub is exclusively cloud-based. Also unlike Git, GitHub is a for-profit service (although basic repository-hosting features are available at no cost to those who are willing to create a user profile, making GitHub a popular choice for open-source projects).</p>
+                        <p>That’s because, in addition to offering all of the features and advantages of Git, GitHub expands upon Git’s basic functionality. It presents an extremely intuitive, graphically represented user interface, and provides programmers with built-in control and task-management tools. Additional features can be implemented via the GitHub Marketplace service. And because GitHub is cloud-based, an individual’s Git repositories can be remotely accessed by any authorized person, from any computer, anywhere in the world (provided it has an internet connection). </p>
+                    </div>
+                    <h3>Git vs. GitHub in Simple Terms</h3>
+                    <div>
+                        <p>So, taken all together: Git vs. GitHub… what’s the difference? Simply put, Git is a version control system that lets you manage and keep track of your source code history. GitHub is a cloud-based hosting service that lets you manage Git repositories. If you have open-source projects that use Git, then GitHub is designed to help you better manage them. </p>
+                        <p>After all, in the world of programming, naming conventions aren’t always intuitive. That’s why it’s worth recognizing the connections and the differences in the similarly named Git and GitHub. Both Git and GitHub give programmers valuable version-control functionality so that they can build ongoing coding projects without being afraid of messing everything up. GitHub just takes things a little bit further than Git, offering more functionality and resources, as well as a place online to store and collaborate on projects. </p>
+                    </div>
+                </div>
+
+                <h2 class="PrmHead" id="InstlGit">Installing Git</h2>
+                <div class="PrmCntnt">
+                    <p>Before you start using Git, you have to make it available on your computer. Even if it’s already installed, it’s probably a good idea to update to the latest version. You can either install it as a package or via another installer, or download the source code and compile it yourself</p>
+                </div>
+                <div class="subCntnt">
+                    <h3>Installing on Windows</h3>
+                    <div>
+                        <p>There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to <a>https://git-scm.com/download/win</a> and the download will start automatically. Note that this is a project called Git for Windows, which is separate from Git itself; for more information on it, go to <a>https://gitforwindows.org</a>.</p>
+                    </div>
+                    <h3>Installing on macOS</h3>
+                    <div>
+                        <p>There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run git from the Terminal the very first time.</p>
+                        <code>$ git --version</code>
+                        <p>If you don’t have it installed already, it will prompt you to install it.</p>
+                    </div>
+                    <h3>Installing on Linux</h3>
+                    <div>
+                        <p>If you want to install the basic Git tools on Linux via a binary installer, you can generally do so through the package management tool that comes with your distribution. If you’re on Fedora (or any closely-related RPM-based distribution, such as RHEL or CentOS), you can use dnf:</p>
+                        <code>$ sudo dnf install git-all</code>
+                        <p>If you’re on a Debian-based distribution, such as Ubuntu, try apt:</p>
+                        <code>$ sudo apt install git-all</code>
+                        <p>For more options, there are instructions for installing on several different Unix distributions on the Git website, at <a>https://git-scm.com/download/linux</a>.</p>
+                    </div>
+                </div>
+
+                <h2 class="PrmHead" id="PreReq">Pre-Requisites</h2>
+                <div class="PrmCntnt">
+                    <p>You need to have git installed on your system and also you you need to have an account with a version controll system, like GitHub in our example. These are the basic requirements to the work done. But while doing work on a real project you will be using different tools to get the job done, just like some text editor like notepad++ or VS code or something else like VS community etc. For the demonstration purpose, we will be using VS code. In order to implement the tutorial with us you will need the following! </p>
+                    <ul>
+                        <li><a href="https://code.visualstudio.com/download" target="_blank">VS Code (Click to Install latest version)</a></li>
+                        <li><a href=#InstlGit>Git (Click to get back to Git Installation)</a></li>
+                        <li>GitHub Repository</li>
+                    </ul>
+                </div>
+                <div class="subCntnt">
+                    <h3 id="GitRep">Make GitHub Repository</h3>
+                    <div>
+                        <p>
+                            You can create a repository on GitHub using the following steps.
+                            Although there are other ways as well but I believe this is the easiest.
+                        </p>
+                        <ul>
+                            <li>Open <a href="https://github.com/">GitHub</a> and at the top right corner, click create new repository</li>
+                            <li>
+                                Write the name of repository you want. Then GitHub will check if that name of repository is available or not.
+                                If it is available, then you can create it. Otherwise you will get an error message.
+                                Then you need to choose a differnt name.
+                            </li>
+                            <li>
+                                You can choose a description for your repository. However it's optional.
+                            </li>
+                            <li>
+                                You have the right to choose the privacy level for your repository in two options.
+                                Either it can be public or private.
+                                For this guide, we shall keep it public for easiness.
+                            </li>
+                            <li>
+                                Ignore rest of the options for now and click create repository.
+                            </li>
+                            <li>
+                                An empty repository will be created in your GitHub account.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2 class="PrmHead" id="GitInit">Initiallizing Git</h2>
+                <div class="PrmCntnt">
+                    <ul>
+                        <li>Open VS Code and create a new file.</li>
+                        <li>Write some code in the file.</li>
+                        <li>Save the file.</li>
+                        <li>You can see the file saved in the left side of VS Code.</li>
+                        <li>So far, we have created a local project.</li>
+                    </ul>
+                </div>
+                <div class="subCntnt">
+                    <h3>Git Local Setup</h3>
+                    <div>
+                        <ul>
+                            <li>Open command prompt and navigate to your local project folder. </li>
+                            <li>In the command prompt, type <code>git init</code> to initialize the repository.</li>
+                            <li>You will get a message that the repository is initialized.</li>
+                            <li>Now you can add files to the repository.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2 class="PrmHead" id="GitWrk">Working with Git</h2>
+                <div class="PrmCntnt">
+                    <ul>
+                        <li>In the command prompt, type <code>git add .</code> to add all the files in the repository.</li>
+                        <li>You will get a message that all the files are added.</li>
+                        <li>Now you can commit the files.</li>
+                        <li>In the command prompt, type <code>git commit -m "Initial commit"</code> to commit the files.</li>
+                        <li>You will get a message that the files are committed.</li>
+                    </ul>
+                </div>
+                <div class="subCntnt">
+                    <h3>GitHub Online Setup</h3>
+                    <div>
+                        <ul>
+                            <li>Now you can push the files to the repository. </li>
+                            <li>In the command prompt, type <code>git push origin master</code> to push the files to the repository.</li>
+                            <li>You will get a message that the files are pushed.</li>
+                            <li>Now you can pull the files from the repository.</li>
+                            <li>In the command prompt, type <code>git pull origin master</code> to pull the files from the repository.</li>
+                            <li>You will get a message that the files are pulled.</li>
+                            <li>Now you can see the files in the repository.</li>
+                        </ul>
+                    </div>
+
+                    <h3>More Git Commands</h3>
+                    <div>
+                        <ul>
+                            <li>In the command prompt, type <code>git status</code> to see the status of the repository.</li>
+                            <li>In the command prompt, type <code>git log</code> to see the log of the repository. </li>
+                            <li>In the command prompt, type <code>git branch</code> to see the branches of the repository.</li>
+                            <li>In the command prompt, type <code>git checkout -b new-branch</code> to create a new branch.</li>
+                            <li>In the command prompt, type <code>git checkout new-branch</code> to switch to the new branch.</li>
+                            <li>You'll be moved to master new-branch now.</li>
+                            <li>In the command prompt, type <code>git checkout master</code> to switch to the master branch.</li>
+                            <li>You'll be moved to master branch now.</li>
+                            <li>In the command prompt, type <code>git branch -d new-branch</code> to delete the new branch.</li>
+                            <li>new-branch will be deleted.</li>
+                            <li>In the command prompt, type <code>git branch</code> to see the branches of the repository.li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2 class="PrmHead" id="reads">Suggested Reads</h2>
+                <div class="PrmCntnt">
+                    <ul>
+                        <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git Installation</a></li>
+                        <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Basics">Git Basics</a></li>
+                        <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Branching-and-Merging">Git Branching and Merging</a></li>
+                        <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Git-Commands">Git Commands</a></li>
+                        <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Git-Configuration">Git Configuration</a></li>
+                        <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Git-Remote-Repositories">Git Remote Repositories</a></li>
+                        <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Git-Submodules">Git Submodules</a></li>
+                        <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Git-Stashing">Git Stashing</a></li>
+                        <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Git-Tutorial">Git Tutorial</a></li>
+                        <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Git-FAQ">Git FAQ</a></li>
+                        <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Git-Tips">Git Tips</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+
+</body>
+</html>
+
